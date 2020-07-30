@@ -1,5 +1,3 @@
-import subprocess
-
 
 def open_file(filename):
     try:
@@ -48,7 +46,7 @@ def compare(filename1,filename2):
 
 
 if __name__ == '__main__':
-    obj = subprocess.Popen("testjenkin.sh >newresult")
+
     f1 = open_file('newresult')
     if f1==0:
         exit(0)
