@@ -49,7 +49,7 @@ if __name__ == '__main__':
     if f1==0:
         exit(0)
     else:
-        f2 = open_file('oldresult1')
+        f2 = open_file('oldresult')
     if f2==0:
         f1.close_file()
         exit(0)
