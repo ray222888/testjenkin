@@ -25,7 +25,9 @@ def compare(filename1,filename2):
                 if len(str1)>len(str2):
                     for i in range(len(str2)):
                         index+=1
-                        if str1[i]!=str2[i]:
+                        try:
+                         if str1[i]!=str2[i]:
+                        except IOError:    
                             print("两个文件第一次出现不同在：{}行{}列".format(line,index))
                             return 0
                         else:
