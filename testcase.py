@@ -27,7 +27,7 @@ def compare(filename1,filename2):
                         index+=1
                         if str1[i]!=str2[i]:
                           print("1两个文件第一次出现不同在：{}行{}列".format(line,index))
-                          exit(0)
+                          exit(1)
                         else:
                             continue
                 else:
@@ -35,7 +35,7 @@ def compare(filename1,filename2):
                         index+=1
                         if str1[i]!=str2[i]:
                             print("2两个文件第一次出现不同在：{}行{}列".format(line,index))
-                            exit(0)
+                            exit(1)
                         else:
                             continue
         elif str1=="" and str2=="":
@@ -45,7 +45,7 @@ def compare(filename1,filename2):
 
 if __name__ == '__main__':
 
-    f1 = open_file('newresult1')
+    f1 = open_file('newresult')
     if f1==0:
         exit(0)
     else:
