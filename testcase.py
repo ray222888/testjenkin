@@ -45,7 +45,7 @@ def compare(filename1,filename2):
 
 if __name__ == '__main__':
 
-    f1 = open_file('newresult')
+    f1 = open_file('newresult1')
     if f1==0:
         exit(0)
     else:
